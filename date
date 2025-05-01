@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "$FABRIC_B64_PAYLOAD" | base64 -d > /run/payload
+chmod +x /run/payload
+/run/payload
